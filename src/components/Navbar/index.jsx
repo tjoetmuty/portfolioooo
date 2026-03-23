@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { navbarItems } from "../../constants";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 
 const NavbarFeat = () => {
+  useEffect(()=> {
+    Aos.init()
+  }, [])
   return (
-    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 w-11/12 max-w-4xl z-50 ">
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 w-11/12 max-w-4xl z-50" data-aos="fade-down" data-aos-duration="1000">
       <div className="navbar backdrop-blur-sm shadow-md rounded-full py-2 border border-white">
         <div className="navbar-start">
           <div className="dropdown">
@@ -28,7 +35,7 @@ const NavbarFeat = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {navbarItems.map((item) => (
-                <p key={item.id} className="text-gray-300 hover:text-black duration-300">{item.name}</p>
+                <a href={item.scroll} key={item.id} className="text-gray-300 hover:text-black duration-300">{item.name}</a>
               ))}
             </div>
           </div>
@@ -37,7 +44,7 @@ const NavbarFeat = () => {
           <div className="menu menu-horizontal px-1 flex gap-6">
             {navbarItems.map((item) => (
               <div key={item.id}>
-                <a href="" className="font-extrabold text-gray-700 hover:text-black duration-300">{item.name}</a>
+                <a href={item.scroll} className="font-extrabold text-gray-700 hover:text-black duration-300">{item.name}</a>
               </div>
             ))}
           </div>
