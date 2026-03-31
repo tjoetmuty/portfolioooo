@@ -20,6 +20,7 @@ import {
 export const navbarItems = [
   { id: 1, name: "Home", scroll: "#Home" },
   { id: 2, name: "Project", scroll: "#Project" },
+  { id: 3, name: "Work", scroll: "#Work" },
 ];
 
 export const skillS = [
