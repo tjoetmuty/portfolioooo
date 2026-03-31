@@ -13,9 +13,9 @@ const ProjectsFeat = () => {
         FEATURED PROJECTS
       </h1>
       <hr className="text-gray-200" />
-      <div className="flex justify-between" data-aos="fade-up" data-aos-duration="1000">
+      <div className="flex flex-col lg:flex-row gap-10 justify-between" data-aos="fade-up" data-aos-duration="1000">
         {projectItems.map((item) => (
-        <div className="card bg-base-100 w-96 shadow-md"  key={item.id}>
+        <div className="card bg-base-100 w-auto shadow-md"  key={item.id}>
           <figure className="px-10 pt-10">
             <img
               src={item.img}

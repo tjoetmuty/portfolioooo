@@ -16,10 +16,10 @@ const HeroFeat = () => {
           data-aos="zoom-out-down"
           data-aos-duration="1000"
         >
-          <div className="flex gap-12">
-            <div className="w-1/2">
-              <h1 className="font-bold  text-[#132440]">Tjoet Muty Ahmad👋</h1>
-              <h2 className="text-5xl bg-clip-text bg-linear-to-r from-black via-[#132440] to-[#FDB5CE] text-transparent font-bold py-4 tracking-widest ">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+            <div className="w-full lg:w-1/2">
+              <h1 className="font-bold text-xs md:text-sm lg:text-md  text-[#132440]">Tjoet Muty Ahmad👋</h1>
+              <h2 className="text-2xl md:text-5xl lg:text-5xl bg-clip-text bg-linear-to-r from-black via-[#132440] to-[#FDB5CE] text-transparent font-bold py-4 tracking-widest ">
                 FRONTEND DEVELOPER
               </h2>
               <p className="py-6">
@@ -29,7 +29,7 @@ const HeroFeat = () => {
                 APIs, and writing clean, maintainable code.
               </p>
             </div>
-            <div>
+            <div className="hidden lg:block">
               <SkillFeat />
             </div>
           </div>

@@ -50,7 +50,7 @@ const NavbarFeat = () => {
           </div>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-transparent rounded-full">Reach me out</a>
+          <a className="btn bg-transparent rounded-full" href={import.meta.env.VITE_CV} target="_blank">Reach me out</a>
         </div>
       </div>
     </div>

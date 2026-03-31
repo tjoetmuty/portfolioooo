@@ -10,7 +10,7 @@ import Experience from "./components/Experience";
 const App = () => {
   const { scrollYProgress } = useScroll();
   return (
-    <div className="bg-linear-to-r from-[#FDB5CE] to-75% py-4 px-28">
+    <div className="bg-linear-to-r from-[#FDB5CE] to-75% py-4 px-10 md:px-8 lg:px-28">
       <motion.div
       className="z-50"
         id="scroll-indicator"
