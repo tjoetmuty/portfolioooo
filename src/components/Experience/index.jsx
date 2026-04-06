@@ -24,7 +24,7 @@ const Experience = () => {
             </svg>
           </div>
           <div className="timeline-end mb-10 md:text-end">
-            <time className="font-mono italic">Mar 2026 - Present</time>
+            <time className="font-mono italic">Apr 2026 - Present</time>
             <div className="text-sm font-bold">
               Study First
             </div>
