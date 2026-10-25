@@ -11,7 +11,7 @@ const HeroFeat = () => {
     <div className="container mx-auto my-32">
       <div className="flex flex-col gap-6">
         <div
-          className="card backdrop-blur-sm p-20 shadow-xl"
+          className="card backdrop-blur-sm p-6 sm:p-10 lg:p-20 shadow-xl"
           id="Home"
           data-aos="zoom-out-down"
           data-aos-duration="1000"
